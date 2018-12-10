@@ -1,87 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+  <html>
+    <head>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <script src="js/jquery-3.3.1.js"></script>
+      <script src="js/script.js"></script>
+      <title>Quiz</title>
+      <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <meta charset="utf-8">
-  <title>Quiz</title>
-  <link rel="stylesheet" href="css/style.css">
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>QUIZ BOARD</h1>
+            <form id="formOne">
 
-</head>
+              <label for="Question1"><b>1. What is a variable?</b></label><br>
+              <input type="radio" name="question1"  value="20">A variable is a container to store values.<br>
+              <input type="radio" name="question1"  value="0">It is a series of characters inside of a quotation marks.<br>
+              <input type="radio" name="question1"  value="0">It is an action that is taken on something.<br>
+              <input type="radio" name="question1"  value="0">It is a value.<br>
 
-<body>
-  <div class="container">
-    <h1>QUIZ BOARD</h1>
-  </div>
+              <label for="Question2"><b>2. Which of the following is true about how we name variables?</b></label><br>
+              <input type="radio" name="question2" value="20">myNumber.<br>
+              <input type="radio" name="question2" value="0">MyNumber.<br>
+              <input type="radio" name="question2" value="0">MYNUMBER<br>
 
-  <div class="container">
-    <form id="form">
+              <label for="Question3"><b>3. Which of the following is not a data type.</b></label><br>
+              <input type="radio" name="question3" value="0">Boolean.<br>
+              <input type="radio" name="question3" value="0">String.<br>
+              <input type="radio" name="question3" value="0">Undefined.<br>
+              <input type="radio" name="question3" value="20">Variable.<br>
 
+              <label for="Question4"><b>4.Whats the other name for JavaScript .</b></label><br>
+              <input type="radio" name="question4" value="20">ECMAScript.<br>
+              <input type="radio" name="question4" value="0">Vue.<br>
+              <input type="radio" name="question4" value="0">I dont know.<br>
+              <input type="radio" name="question4" value="0">JS.<br>
 
-    <div class="form-group">
-      <label for="Question1"><b>1. What is a variable?</b></label><br>
-      <input type="radio" name="question1" id="qs" value="right">A variable is a container to store values.<br>
-      <input type="radio" name="question1" id="qs" value="wrong">It is a series of characters inside of a quotation marks.<br>
-      <input type="radio" name="question1" id="qs" value="wrong">It is an action that is taken on something.<br>
-      <input type="radio" name="question1" id="qs" value="wrong">It is a value.<br>
+              <label for="Question5"><b>5.Which function allows a user to input text? .</b></label><br>
+              <input type="radio" name="question5" value="0">alert<br>
+              <input type="radio" name="question5" value="20">prompt.<br>
+              <input type="radio" name="question5" value="0">confirm.<br>
+              <input type="radio" name="question5" value="0">toFixed.<br>
 
-    </div>
-
-    <div class="form-group">
-      <label for="Question2"><b>2. Which of the following is true about how we name variables?</b></label><br>
-      <input type="radio" name="question2" id="qs" value="20">myNumber.<br>
-      <input type="radio" name="question2" id="qs" value="0">MyNumber.<br>
-      <input type="radio" name="question2" id="qs" value="0">MYNUMBER<br>
-    </div>
-
-    <div class="form-group">
-      <label for="Question3"><b>3. Which of the following is not a data type.</b></label><br>
-      <input type="radio" name="question3" id="qs" value="0">Boolean.<br>
-      <input type="radio" name="question3" id="qs" value="0">String.<br>
-      <input type="radio" name="question3" id="qs" value="0">Undefined.<br>
-      <input type="radio" name="question3" id="qs" value="20">Variable.<br>
-    </div>
-
-    <div class="form-group">
-      <label for="Question4"><b>4.Whats the other name for JavaScript .</b></label><br>
-      <input type="radio" name="question4" id="qs" value="20">ECMAScript.<br>
-      <input type="radio" name="question4" id="qs" value="0">Vue.<br>
-      <input type="radio" name="question4" id="qs" value="0">I dont know.<br>
-      <input type="radio" name="question4" id="qs" value="0">JS.<br>
-    </div>
-
-    <div class="form-group">
-      <label for="Question5"><b>5.Which function allows a user to input text? .</b></label><br>
-      <input type="radio" name="question5" id="qs" value="0">alert<br>
-      <input type="radio" name="question5" id="qs" value="20">prompt.<br>
-      <input type="radio" name="question5" id="qs" value="0">confirm.<br>
-      <input type="radio" name="question5" id="qs" value="0">toFixed.<br>
-    </div>
-
-
-    <div class="submit">
-      <button type="button" name="submit">Submit</button>
-
-    </div>
-
-    </form>
-
-    </div>
-
-
-    </div>
-
-
-
-
-
-
-
-
-  </div>
-
-</body>
-
-</html>
+             <button type="submit" name="button" id="submit">Submit</button>
+            </form>
+            <div>
+              <p id="yourScore"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
