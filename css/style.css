@@ -18,3 +18,9 @@ body{
 h2{
   padding-bottom: 5px;
 }
+.container{
+  background-color:  #1d1d2f;
+  width: 50%;
+  color: #ffcc00;
+  padding-top: 30px;
+}
